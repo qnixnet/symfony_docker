@@ -7,7 +7,6 @@
 * [Nginx](https://nginx.org/)
 * [PHP-FPM](https://php-fpm.org/)
 * [Postgres](https://www.postgresql.org/)
-* [Redis](https://redis.io/)
 * [Composer](https://getcomposer.org/)
 * [Symfony CLI](https://symfony.com/)
 
@@ -58,6 +57,5 @@ This stack needs [docker](https://www.docker.com/) and [docker-compose](https://
 We have the following *docker-compose* built images:
 
 * `nginx`: The Nginx webserver container in which the application volume is mounted.
-* `php`: The PHP-FPM container in which the application volume is mounted too.
+* `app`: The PHP-FPM container in which the application volume is mounted too.
 * `postgres`: The Postgres database container.
-* `redis`: The Redis server container.
