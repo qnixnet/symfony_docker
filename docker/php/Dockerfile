@@ -37,9 +37,6 @@ RUN chmod +x /usr/local/bin/install-php-extensions && sync \
     && install-php-extensions amqp apcu \
     && rm /usr/local/bin/install-php-extensions
 
-# Install Redis extension
-RUN pecl install -o -f redis && rm -rf /tmp/pear && docker-php-ext-enable redis
-
 # Configure PHP
 COPY local_php.ini /usr/local/etc/php/conf.d/ext-symfony.ini
 
